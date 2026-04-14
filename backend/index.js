@@ -1,10 +1,16 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import dbConnect from './config/db.js'
+import cookieParser from 'cookie-parser'
+import authRoute from './routes/authRoutes.js'
 dotenv.config()
 let port=process.env.PORT||6000
 
 let app=express()
+
+app.use(express.json())
+app.use(cookieParser())
+app.use("/api/auth",authRoute)
 
 app.get("/",(req,res)=>{
     res.send("hello")
