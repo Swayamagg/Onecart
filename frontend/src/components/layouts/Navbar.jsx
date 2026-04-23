@@ -21,13 +21,13 @@ const Navbar = () => {
             <Link to="/" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>OneCart</Link>
         </div>
         <div className='hidden md:flex space-x-6'>
-            <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>Men</Link>
+            <Link to="/collections/all" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>Men</Link>
             <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>Women</Link>
             <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>Top wear</Link>
             <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>Bottom wear</Link>
         </div>
         <div className='flex items-center space-x-4'>
-            <Link to="/profile" className='hover:text-black'><HiOutlineUser className='h-6 w-6 text-gray-700'/></Link>
+            <Link to="/login" className='hover:text-black'><HiOutlineUser className='h-6 w-6 text-gray-700'/></Link>
             <button onClick={toggleCartDrawer} className='relative hover:text-black'>
                 <HiOutlineShoppingBag className='h-6 w-6 text-gray-700'/>
                 <span className='absolute -top-1 bg-red-500 text-xs  rounded-full px-2 py-0.5'>4</span>
