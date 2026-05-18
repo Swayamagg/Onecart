@@ -16,6 +16,8 @@ import AdminLayout from './components/admin/AdminLayout'
 import AdminHome from './pages/AdminHome'
 import UserManage from './components/admin/UserManage'
 import ProductManage from './components/admin/ProductManage'
+import EditProduct from './components/admin/EditProduct'
+import OrderManagement from './components/admin/OrderManagement'
 
 const App = () => {
   return (
@@ -38,6 +40,8 @@ const App = () => {
           <Route index element={<AdminHome/>}/>
           <Route path='users' element={<UserManage/>}/>
           <Route path='products' element={<ProductManage/>}/>
+          <Route path='products/:id/edit' element={<EditProduct/>}/>
+          <Route path='orders' element={<OrderManagement/>}/>
       </Route>
     </Routes>
     </BrowserRouter>
